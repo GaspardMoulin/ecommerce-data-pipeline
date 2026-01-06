@@ -1,0 +1,6 @@
+# Ouvre .gitignore et vérifie que ces lignes sont présentes
+data/processed/*.csv
+data/processed/*.xlsx
+data/processed/*.json
+!data/processed/DATA_ANALYSIS_REPORT.md
+logs/*.log
