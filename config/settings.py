@@ -32,3 +32,28 @@ DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///ecommerce_data.db')
 # Limites
 MAX_PRODUCTS = 1000
 CONCURRENT_REQUESTS = 5
+
+# Web Scraping Configuration
+TARGET_WEBSITE = 'https://books.toscrape.com'
+
+# Selenium Configuration
+SELENIUM_HEADLESS = True
+SELENIUM_WAIT_TIME = 10
+SELENIUM_PAGE_LOAD_TIMEOUT = 30
+
+# Playwright Configuration
+PLAYWRIGHT_HEADLESS = True
+PLAYWRIGHT_TIMEOUT = 30000  # milliseconds
+
+# Anti-detection
+ENABLE_STEALTH = True
+RANDOM_DELAY_MIN = 1  # seconds
+RANDOM_DELAY_MAX = 3  # seconds
+
+# Scraping limits
+MAX_RETRIES_PER_PAGE = 3
+DOWNLOAD_IMAGES = True
+IMAGES_DIR = DATA_DIR / 'images'
+
+# Create images directory
+IMAGES_DIR.mkdir(parents=True, exist_ok=True)
